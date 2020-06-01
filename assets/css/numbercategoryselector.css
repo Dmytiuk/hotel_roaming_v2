@@ -1,0 +1,106 @@
+
+div.NCS.parent {
+    z-index: 99999;
+    position: absolute;
+    background: white;
+    border: 0.5px solid #dddddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    text-align: center;
+    overflow: hidden;
+    width: 28%;
+}
+
+div.NCS.category {
+    border-bottom: 0.5px solid #dddddd;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 68px;
+    position: relative;
+}
+
+div.NCS.room {
+    height: 5px;
+}
+
+div.NCS.display {
+  position: absolute;
+  pointer-events: none;
+}
+.container_main_clicked div.NCS.display{
+  pointer-events: all;
+}
+div.NCS.inlinedisplay {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+div.NCS.displayelement:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+div.NCS.displayelement {
+    display: inline-block;
+    background: #FFF;
+    color: #333;
+    font-family: 'sailec_regular';
+    box-sizing: border-box;
+    height: 100%;
+    padding-right: 15px;
+}
+
+a.NCS.close {
+display: none;
+}
+
+div.NCS.name, div.NCS.value {
+    font-size: 16px;
+    font-family: 'sailec_regular';
+
+}
+
+div.NCS.text {
+    clear: both;
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+div.NCS.name, a.NCS.close,  {
+    font-family: "sailec_regular"
+    color: #333;
+}
+div.NCS.value{
+  font-family: 'sailec_bold';
+}
+div.NCS.buttons {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 3%;
+    top: 21px;
+}
+
+a.NCS.button {
+    color: white;
+    text-decoration: none;
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    background: #FFF;
+    color: #333;
+
+}
+
+a.NCS.button.inactive {
+    border: 1px solid #DBDBDB;
+    color: #DBDBDB;
+}

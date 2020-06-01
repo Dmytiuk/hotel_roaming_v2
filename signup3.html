@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="intro_inner">
+            <p class="form_headline">Hotel Roaming</p>
+            <p class="form_heading">Sign up</p>
+            <p class="form_description">Ask approval from a colleague using an email that has same domain with the company website</p>
+            <form class="form_blocks" action="signup4.html" method="post">
+                <div class="form_block">
+                    <div class="form_leftblock"><i class="fal fa-id-card"></i> </div>
+                    <input class="form_input" type="text" name="nameandsur" value="" placeholder="Name and surname" autocomplete="off">
+                </div>
+
+                <div class="form_block">
+                    <div class="form_leftblock"><i class="fal fa-envelope"></i></div>
+                    <input class="form_input" type="email" name="email" value="" placeholder="Email address" autocomplete="off">
+                </div>
+
+                <p class="form_description">or</p>
+                <div class="upload">
+                    <div class="upload-button">
+
+                      <div>
+                        <img src="assets/img/path4.png" alt="">
+                      </div>
+
+                      <div>
+                        <img src="assets/img/path3.png" alt="">
+                      </div>
+
+                      <div>
+                        <span>Upload</span>
+                      </div>
+
+                    </div>
+                    <div class="upload_text">
+                      <p class="upload__text">Upload a document</p>
+                      <p class="upload__text">proving my work place.</p>
+                    </div>
+
+                  </div>
+                  <script>
+                    let Upload = {
+                      onload: document.addEventListener('DOMContentLoaded', function() { Upload.init(); }),
+                      init: function() {
+                       this.bind();
+                      },
+                      bind: function() {
+                        $(document).on('click', 'div.upload-button', function() {
+                            var $input = $('<input type="file" accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document, image/*" multiple >').on('change', function() {
+                                $input.remove();
+                            }).hide();
+                            $(document.body).append($input);
+                            $input.click();
+                        })
+                      }
+                    }
+                  </script>
+                  <script
+                  src="https://code.jquery.com/jquery-3.4.1.js"
+                  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                  crossorigin="anonymous"></script>
+
+                <button type="submit" class="form_submit1">Sign up</button>
+            </form>
+      </div>
+    </div>
+  </body>
+</html>
