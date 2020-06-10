@@ -150,6 +150,7 @@
                 $display.empty();
                 $displayelements = 0;
                 for ($i = 0; $i < settings.categoryNames.length; $i++) {
+
                     if (settings.categoryValues[$i] != 0 || settings.showZero) {
                         $displayelement = $("<div class='NCS displayelement'></div>").appendTo($display);
                         $displayelement.text(settings.categoryValues[$i] + " " + settings.categoryNames[$i]);
@@ -236,14 +237,29 @@
                         $button_minus.addClass("inactive");
                     }
                 }
-                $close = $("<div class='NCS room'></div><a class='NCS close' href=''>Close</a>").appendTo($parent);
-                $close.click(function () {
-                    if (settings.fade) {
-                        $parent.fadeOut(200);
-                    } else {
-                        $parent.hide();
-                    }
-                    return false;
+                $close = $("<span class='NSC question'>How old is the child you're traveling with?</span>").appendTo($parent);
+                $select = $("<select></select>").appendTo($parent);
+                $($select).prepend('<option value="1">1 years old</option>');
+                $($select).prepend('<option value="2">2 years old</option>');
+                $($select).prepend('<option value="3">3 years old</option>');
+                $($select).prepend('<option value="4">4 years old</option>');
+                $($select).prepend('<option value="5">5 years old</option>');
+                $($select).prepend('<option value="6">6 years old</option>');
+                $($select).prepend('<option value="7">7 years old</option>');
+                $($select).prepend('<option value="8">8 years old</option>');
+                $($select).prepend('<option value="9">9 years old</option>');
+                $($select).prepend('<option value="10">10 years old</option>');
+                $($select).prepend('<option value="11">11 years old</option>');
+                $($select).prepend('<option value="12">12 years old</option>');
+                $($select).prepend('<option value="13">13 years old</option>');
+                $($select).prepend('<option value="14">14 years old</option>');
+                $($select).prepend('<option value="15">15 years old</option>');
+                $($select).prepend('<option value="16">16 years old</option>');
+                $($select).prepend('<option value="17">17 years old</option>');
+                $('select').styler({
+                    function() {
+                		$(this).css('outline', '3px solid red');
+                	}
                 });
 
                 if (settings.showText) {

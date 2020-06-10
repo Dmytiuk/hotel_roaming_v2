@@ -6,12 +6,11 @@ div.NCS.parent {
     border: 0.5px solid #dddddd;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     text-align: center;
-    overflow: hidden;
+
     width: 28%;
 }
 
 div.NCS.category {
-    border-bottom: 0.5px solid #dddddd;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -22,7 +21,11 @@ div.NCS.category {
 div.NCS.room {
     height: 5px;
 }
-
+span.NSC.question{
+  font-family: 'sailec_regular';
+  color: #767676;
+  font-size: 12px;
+}
 div.NCS.display {
   position: absolute;
   pointer-events: none;
@@ -54,7 +57,7 @@ div.NCS.displayelement {
 }
 
 a.NCS.close {
-display: none;
+/* display: none; */
 }
 
 div.NCS.name, div.NCS.value {

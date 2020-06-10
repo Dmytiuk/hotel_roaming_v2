@@ -15,6 +15,9 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/numbercategoryselector.css">
     <script src="assets/js/numbercategoryselector.js"></script>
+    <link href="assets/css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="assets/css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <script src="assets/js/jquery.formstyler.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -75,7 +78,9 @@
       </div>
       <form class="container_search">
           <div class="left_link_search"><div class="bed_image"></div>  Search hotels or destination</div>
-          <span class="calendar_image"></span> <input class="medium_link_search" type="text" id="datepicker" placeholder="Check-in-Check out" autocomplete="off">
+        <div class="chekin-form"><span class="calendar_image"></span> <input class="datepicker" type="text" id="datepicker" placeholder="Check-in-Check out" autocomplete="off">
+
+        </div>
           <input class="medium_link_search" name="NCS" type="text" readonly>
         <button type="submit" class="right_link_search">Search</button>
       </form>

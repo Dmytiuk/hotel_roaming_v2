@@ -29,7 +29,7 @@
         field: null,
         secondField: null,
         firstDay: 1,
-        parentEl: 'div.container_main',
+        parentEl: 'div.chekin-form',
         lang: 'en',
         format: 'DD/MM/YYYY',
         separator: ' - ',
@@ -1324,6 +1324,6 @@
         }
 
     };
-    
+
     return Lightpick;
 }));
