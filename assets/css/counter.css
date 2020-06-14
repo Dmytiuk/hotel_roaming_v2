@@ -1,0 +1,131 @@
+
+div.counter.parent {
+    z-index: 99999;
+    position: absolute;
+    background: white;
+    border: 0.5px solid #dddddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    text-align: center;
+    top: 75px;
+    width: 28%;
+}
+.container_main_search div.counter.parent {
+    top: 60px;
+
+}
+
+div.counter.category {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 68px;
+    position: relative;
+}
+
+div.counter.room {
+    height: 5px;
+}
+span.counter.question{
+  font-family: 'sailec_regular';
+  color: #767676;
+  font-size: 12px;
+  float: left;
+  padding-left: 10px;
+}
+div.counter.display {
+  position: absolute;
+  width: 28%;
+  pointer-events: none;
+  height: 75px;
+  left: 56%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_main_search div.counter.display {
+  position: absolute;
+  width: 28%;
+  pointer-events: none;
+  height: 60px;
+  left: 56%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_main_clicked div.counter.display{
+  pointer-events: all;
+}
+div.counter.inlinedisplay {
+  display: flex;
+  justify-content: center;
+}
+
+div.counter.displayelement:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+div.counter.displayelement {
+    display: inline-block;
+    background: #FFF;
+    color: #333;
+    font-family: 'sailec_regular';
+    box-sizing: border-box;
+    height: 100%;
+    padding-right: 15px;
+}
+
+a.counter.close {
+/* display: none; */
+}
+
+div.counter.name, div.counter.value {
+    font-size: 16px;
+    font-family: 'sailec_regular';
+
+}
+
+div.counter.text {
+    clear: both;
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+div.counter.name, a.counter.close,  {
+    font-family: "sailec_regular"
+    color: #333;
+}
+div.counter.value{
+  font-family: 'sailec_bold';
+}
+div.counter.buttons {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 3%;
+    top: 21px;
+}
+div.counter.button {
+    color: white;
+    text-decoration: none;
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    background: #FFF;
+    color: #333;
+
+}
+.displayelementnumber{
+  font-family: 'sailec_bold';
+}
+div.counter.button.inactive {
+    border: 1px solid #DBDBDB;
+    color: #DBDBDB;
+}

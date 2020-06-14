@@ -198,8 +198,8 @@
 }
 .jq-selectbox__select-text {
 	width: 100%;
-	float: left;
-	display: block;
+	display: flex;
+	padding: 5px 5px 5px 20px;
 
 }
 .jq-selectbox__trigger {
@@ -259,8 +259,9 @@
 }
 .jq-selectbox li {
 	min-height: 18px;
-	padding: 5px 10px 6px;
-	color: #231F20;
+	padding: 5px 5px 5px 17px;
+	color: #333;
+	display: flex;
 }
 .jq-selectbox li.selected {
 	background-color: #A3ABB1;

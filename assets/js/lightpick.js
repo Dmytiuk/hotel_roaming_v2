@@ -1,10 +1,3 @@
-/**
-* @author: Rinat G. http://coding.kz
-* @copyright: Copyright (c) 2019 Rinat G.
-* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
-*/
-
-// Following the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
 
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -29,7 +22,7 @@
         field: null,
         secondField: null,
         firstDay: 1,
-        parentEl: 'div.chekin-form',
+        parentEl: 'div.check_form',
         lang: 'en',
         format: 'DD/MM/YYYY',
         separator: ' - ',

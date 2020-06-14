@@ -5,8 +5,10 @@
     color: #000;
     font-family: 'sailec_regular';
     line-height: 1.125em;
-    width: 44.8%;
+    width: 56%;
     height: auto;
+    left: auto!important;
+    top: auto!important;
 }
 .lightpick__inner{
   position: relative;

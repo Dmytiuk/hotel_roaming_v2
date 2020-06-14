@@ -529,7 +529,7 @@
 							'<div class="jq-selectbox__search"><input type="search" autocomplete="off" placeholder="' + selectSearchPlaceholder + '"></div>' +
 							'<div class="jq-selectbox__not-found">' + selectSearchNotFound + '</div>';
 						var dropdown =
-							$('<div class="jq-selectbox__dropdown" style="top:-240px;">' +
+							$('<div class="jq-selectbox__dropdown" style="top:-235px;">' +
 									searchHTML + '<ul>' + list + '</ul>' +
 								'</div>');
 						selectbox.append(dropdown);
