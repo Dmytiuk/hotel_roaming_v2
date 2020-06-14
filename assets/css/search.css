@@ -96,11 +96,10 @@ border-radius: 50%;
 
 /* Filte-result */
 .container_filter-result{
-  width: 80%;
   padding-top: 25px;
   justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .container_filter{
   width: 30%;
